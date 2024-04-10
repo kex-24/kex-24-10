@@ -1,90 +1,74 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Genshin Impact Character - Programming Exercise
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This work is due before the next class period.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For detailed instructions on how to complete and submit this assignment, please refer to the assignments section of the course syllabus or webpage.
 
-## Preparation
+### Learning Goals
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
+This week's objectives include:
+- Designing Java classes
+- Implementing instance fields
+- Writing constructor methods
+- Creating getters and setters
+- Applying the dot operator for object interaction
+- Utilizing the main method for execution
+- Understanding scope and variable shadowing
 
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+---
 
-## Learning Goals
+## Assignment
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+In the world of Teyvat, a land full of magic and diverse regions from the game Genshin Impact, you'll encounter a plethora of unique characters, each with their own elemental powers and combat skills. Your mission is to model these characters in Java, focusing on their attributes and abilities.
 
-## Troubleshooting Guide
+### Exercise 3.0 Introduction
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+Create a new Java file named `GenshinCharacter.java` within the `src` directory. This file will house the `GenshinCharacter` class. After setting up, we will begin by defining several characters directly within the `main` method.
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+### Exercise 3.1 More Characters
 
-## Assignment Details
+In the initial task, you successfully crafted a character. The world of Genshin Impact is vast and filled with numerous heroes. Let's expand our roster by creating two additional characters for a total of three. Implement this directly within the `main` method, ensuring you print the details for all characters to the console.
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+### Exercise 3.2 Fields
 
-### Task 1: Class Creation
+Refactor your approach to use class fields instead of local variables in the `main` method. Declare fields for `String name`, `String element`, `int level`, `int hp`, and `boolean isConscious` within the `GenshinCharacter` class without assigning initial values.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+### Exercise 3.3 Getters and Setters
 
-### Task 2: Defining Properties
+Implement encapsulation by setting the access level of fields to `private` and introducing getters and setters for each. These methods allow controlled access to the object's state from outside the class.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+### Exercise 3.4 Constructor
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+Constructors streamline the process of initializing new objects. Implement a constructor for your `GenshinCharacter` class to efficiently assign values upon creation.
 
-### Task 3: Spawning Galaxy Pets
+### Exercise 3.5 Create Characters
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+Utilize the constructor method to instantiate a few characters. Compare this approach to the direct assignment used in earlier exercises.
 
-### Task 4: Encapsulation with Getters and Setters
+### Exercise 3.6 `printInfo` Method
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+Refactor the code to introduce a `printInfo` method that prints a character's details, enhancing code reusability and readability.
 
-### Task 5: Constructing with Constructors
+### Exercise 3.7 Elemental Burst
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+Characters in Genshin Impact unleash powerful Elemental Bursts. Model this behavior with an `elementalBurst` method in the `GenshinCharacter` class. This method should accept another character as an argument, simulating an attack, and adjust their `hp` accordingly.
 
-### Task 6: Display Information
+### Exercise 3.8 Understanding Scope and Variable Shadowing
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+Explore examples provided on the concept of variable shadowing and how the `this` keyword can be used to distinguish between instance fields and local variables sharing the same name.
 
-### Task 7: The Cosmic Challenge
+---
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+### Checklist
+- Initial setup: Created `GenshinCharacter.java` and defined the class.
+- Field implementation: Added `name`, `element`, `level`, `hp`, and `isConscious`.
+- Encapsulation assured through getters and setters.
+- Efficient object creation via constructor method.
+- Introduced `printInfo` method for character details output.
+- Simulated Elemental Burst attacks between characters.
+- Reviewed and understood variable shadowing concepts.
 
-### Task 8: Understanding Scope and Shadowing
-
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
-
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+### Reporting Bugs and Errors
+Should you encounter any inconsistencies or errors in this exercise, please report them by creating a new issue with the title "Exercise *x* Error: *summary of error here*". Reported issues will be acknowledged and corrected accordingly.
